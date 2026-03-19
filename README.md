@@ -17,7 +17,7 @@ In a world of common frogs, $GPEPE stands alone in his golden hat. Our mission i
 - **Launchpad:** pump.fun
 
 ## 🌐 Official Links
-* **Website:** file:///C:/Users/Asus/OneDrive/Desktop/GPEPE/index.html
+* **Website:** 
 * **Telegram:** [Join the Court](https://t.me/GPEPEportal)
 * **X (Twitter):https://x.com/gpepe436
 
