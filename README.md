@@ -19,7 +19,7 @@ In a world of common frogs, $GPEPE stands alone in his golden hat. Our mission i
 ## 🌐 Official Links
 * **Website:** 
 * **Telegram:** [Join the Court](https://t.me/GPEPEportal)
-* **X (Twitter):@gpepe436
+* **X (Twitter):https://x.com/gpepe436
 
 * **Pump.fun:** [Buy $GPEPE](REPLACE_WITH_YOUR_LINK)
 
