@@ -17,9 +17,10 @@ In a world of common frogs, $GPEPE stands alone in his golden hat. Our mission i
 - **Launchpad:** pump.fun
 
 ## 🌐 Official Links
-* **Website:** [gpepe.com](https://gpepe.com)
+* **Website:** 
 * **Telegram:** [Join the Court](https://t.me/GPEPEportal)
-* **X (Twitter):** [@GPEPE_Token](https://x.com/GPEPE_Token)
+* **X (Twitter):@gpepe436
+
 * **Pump.fun:** [Buy $GPEPE](REPLACE_WITH_YOUR_LINK)
 
 ## 🛠 Tech Stack
