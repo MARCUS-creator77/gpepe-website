@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPEPE | The Golden King of pump.fun</title>
+    <style>
+        :root {
+            --gold: #FFD700;
+            --dark-gold: #B8860B;
+            --pepe-green: #377E22;
+            --emerald: #50C878;
+            --dark-bg: #0a0a0a;
+        }
+
+        body {
+            margin: 0; font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg); color: white;
+            line-height: 1.6; overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+            padding: 20px; border-bottom: 3px solid var(--gold);
+        }
+
+        .hero-img {
+            width: 320px; border-radius: 20px;
+            border: 4px solid var(--gold);
+            box-shadow: 0 0 40px var(--dark-gold);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 4.5rem; color: var(--gold); margin: 0;
+            text-transform: uppercase; letter-spacing: 4px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .ticker-box {
+            background: var(--pepe-green); padding: 8px 20px;
+            border-radius: 8px; font-weight: 900; font-size: 1.4rem;
+            margin-bottom: 20px; display: inline-block;
+        }
+
+        .cta-btn {
+            padding: 18px 45px; font-size: 1.3rem;
+            background: linear-gradient(45deg, var(--gold), var(--dark-gold));
+            border: none; border-radius: 50px; color: black;
+            font-weight: bold; cursor: pointer; transition: 0.3s;
+            text-decoration: none; display: inline-block; margin-top: 20px;
+        }
+
+        .cta-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px var(--gold); }
+
+        /* Contract Section */
+        .ca-section {
+            background: #111; padding: 60px 20px; text-align: center;
+        }
+
+        .ca-container {
+            background: #000; border: 1px solid var(--gold);
+            padding: 20px; border-radius: 12px; display: inline-block;
+            max-width: 90%; word-break: break-all; margin-top: 15px;
+        }
+
+        .ca-container code { color: var(--emerald); font-family: monospace; font-size: 1.1rem; }
+
+        /* Info Grid */
+        .grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px; padding: 80px 10%;
+        }
+
+        .card {
+            background: #151515; padding: 35px; border-radius: 15px;
+            border-left: 5px solid var(--gold); text-align: center;
+        }
+
+        .card h3 { color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+
+        footer {
+            padding: 40px; text-align: center; background: #000;
+            border-top: 1px solid #222; font-size: 0.9rem; color: #666;
+        }
+
+        .social-links a {
+            color: var(--gold); margin: 0 15px; text-decoration: none; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="gpepe.jpg" alt="GPEPE Golden Hat" class="hero-img">
+        <h1>$GPEPE</h1>
+        <div class="ticker-box">THE GOLDEN KING OF PUMP.FUN</div>
+        <p style="font-size: 1.2rem; max-width: 600px;">The most prestigious frog on Solana. No taxes, no rug, just gold. Ascend to the throne.</p>
+        
+        <a href="PASTE_PUMP_FUN_URL_HERE" class="cta-btn">BUY ON PUMP.FUN</a>
+    </header>
+
+    <section class="ca-section">
+        <h2>OFFICIAL CONTRACT ADDRESS</h2>
+        <div class="ca-container">
+            <code>PASTE_CONTRACT_ADDRESS_HERE</code>
+        </div>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Pure Gold Supply</h3>
+            <p>1,000,000,000 Tokens<br>Fair Launch</p>
+        </div>
+        <div class="card">
+            <h3>Zero Tax</h3>
+            <p>0% Buy / 0% Sell<br>Always.</p>
+        </div>
+        <div class="card">
+            <h3>Safety First</h3>
+            <p>Liquidity Burned<br>Ownership Renounced</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links" style="margin-bottom: 20px;">
+            <a href="PASTE_X_LINK_HERE">X (TWITTER)</a>
+            <a href="PASTE_TELEGRAM_LINK_HERE">TELEGRAM</a>
+        </div>
+        <p>&copy; 2026 GPEPE. $GPEPE is a meme coin for entertainment. No intrinsic value. Don't invest more than you can lose.</p>
+    </footer>
+
+</body>
+</html>
