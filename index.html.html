@@ -3,272 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPEPE | The Golden King of Memes</title>
+    <title>GPEPE | The Golden King</title>
     <style>
-        /* CSS Reset and Variables */
         :root {
             --gold: #FFD700;
             --dark-gold: #B8860B;
             --pepe-green: #377E22;
-            --emerald: #50C878;
-            --text-white: #ffffff;
-            --dark-bg: #0a0a0a;
-            --card-bg: #111111;
+            --bg-dark: #050505;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-white);
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
             overflow-x: hidden;
         }
 
-        /* Common Elements */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 100px 0;
+        /* Banner Section */
+        .banner-container {
+            width: 100%;
+            max-width: 1500px;
+            margin-top: 20px;
+            padding: 0 10px;
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 50px;
-            color: var(--gold);
-            font-weight: 900;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-        .btn-gold {
-            background: linear-gradient(45deg, var(--gold), var(--dark-gold));
-            color: #000;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-        }
-
-        .btn-gold:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
-        }
-
-        /* Hero Section with Image */
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: 
-                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
-                url('gpepe-king.jpg') no-repeat center center/cover;
-            padding: 20px;
-            position: relative;
-        }
-
-        .hero-content {
-            z-index: 10;
-        }
-
-        .hero-ticker {
-            font-size: 5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(to bottom, var(--gold), #fff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-weight: 900;
-        }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: var(--emerald);
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        /* Tokenomics Section */
-        #tokenomics {
-            background-color: var(--card-bg);
-            border-top: 3px solid var(--gold);
-            border-bottom: 3px solid var(--gold);
-        }
-
-        .tokenomics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .tokenomics-card {
-            background-color: var(--dark-bg);
-            padding: 40px;
+        .banner-img {
+            width: 100%;
             border-radius: 15px;
-            border: 1px solid #333;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+        }
+
+        /* Content Section */
+        .content {
             text-align: center;
-            transition: border-color 0.3s ease;
+            padding: 60px 20px;
+            max-width: 800px;
         }
 
-        .tokenomics-card:hover {
-            border-color: var(--emerald);
-        }
-
-        .tokenomics-card h3 {
+        h1 {
+            font-size: 4rem;
             color: var(--gold);
             text-transform: uppercase;
-            font-size: 1.5rem;
+            letter-spacing: 5px;
             margin-bottom: 10px;
+            font-weight: 900;
         }
 
-        .tokenomics-value {
-            font-size: 2rem;
-            color: var(--emerald);
-            font-weight: bold;
-        }
-
-        /* Twitter (X) Call to Action Section */
-        #community-cta {
-            background-color: var(--dark-bg);
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .twitter-box {
-            background-color: #0d0d0d;
-            border: 2px solid var(--emerald);
-            border-radius: 20px;
-            padding: 50px;
-            display: inline-block;
-            margin-top: 40px;
-            box-shadow: 0 0 20px rgba(80, 200, 120, 0.2);
-        }
-
-        .twitter-handle {
-            font-size: 3rem;
-            color: var(--gold);
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-            margin-bottom: 20px;
-            word-break: break-all;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--card-bg);
-            padding: 50px 0;
-            text-align: center;
-            border-top: 1px solid #222;
-        }
-
-        .social-links {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-
-        .social-links a {
-            color: var(--gold);
+        .subtitle {
             font-size: 1.5rem;
+            color: var(--pepe-green);
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        /* Twitter Card */
+        .x-card {
+            background: linear-gradient(145deg, #111, #000);
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .x-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .x-link {
+            font-size: 2rem;
+            color: white;
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-family: 'Courier New', monospace;
+            display: block;
+            margin-bottom: 25px;
         }
 
-        .social-links a:hover {
-            color: var(--emerald);
+        .btn-x {
+            background: var(--gold);
+            color: black;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.3s;
+            display: inline-block;
         }
 
-        .disclaimer {
+        .btn-x:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
             font-size: 0.8rem;
-            max-width: 600px;
-            margin: 0 auto;
-            color: #888;
+            color: #444;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="hero-content">
-            <h1 class="hero-ticker">$GPEPE</h1>
-            <p class="hero-subtitle">The Golden King of Solana Memes</p>
-            <p style="margin-bottom: 40px; color: #ccc;">No taxes. No bullshit. Only wealth. The GPEPE kingdom is open.</p>
-            <a href="#tokenomics" class="btn btn-gold">VIEW THE TOKENOMICS</a>
-        </div>
-    </header>
+    <div class="banner-container">
+        <img src="gpepe.jpg" alt="GPEPE Banner" class="banner-img">
+    </div>
 
-    <section id="tokenomics">
-        <div class="container">
-            <h2 class="section-title">The GPEPE Treasury</h2>
-            <div class="tokenomics-grid">
-                <div class="tokenomics-card">
-                    <h3>Symbol</h3>
-                    <p class="tokenomics-value">$GPEPE</p>
-                </div>
-                <div class="tokenomics-card">
-                    <h3>Total Supply</h3>
-                    <p class="tokenomics-value">1,000,000,000</p>
-                </div>
-                <div class="tokenomics-card">
-                    <h3>Tax (Buy/Sell)</h3>
-                    <p class="tokenomics-value">0% / 0%</p>
-                </div>
-                <div class="tokenomics-card">
-                    <h3>Chain</h3>
-                    <p class="tokenomics-value">Solana</p>
-                </div>
-            </div>
+    <div class="content">
+        <h1>$GPEPE</h1>
+        <p class="subtitle">The Royal Standard of Memes</p>
+        
+        <div class="x-card">
+            <p style="margin-bottom: 10px; color: #888; text-transform: uppercase;">Official X Handle</p>
+            <a href="https://x.com/gpepe436" class="x-link">@gpepe436</a>
+            <a href="https://x.com/gpepe436" class="btn-x" target="_blank">Follow the Court</a>
         </div>
-    </section>
-
-    <section id="community-cta">
-        <div class="container">
-            <h2 class="section-title">Join the Court of GPEPE</h2>
-            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p>The King is watching. Follow the only official GPEPE court for real-time updates, contests, and community announcements.</p>
-                <div class="twitter-box">
-                    <p class="twitter-handle">@gpepe436</p>
-                    <a href="https://x.com/gpepe436" class="btn btn-gold" target="_blank">FOLLOW THE KING ON X</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <div class="container" style="padding: 0;">
-            <ul class="social-links">
-                <li><a href="https://t.me/GPEPEportal" target="_blank">Telegram Portal</a></li>
-                <li><a href="https://x.com/gpepe436" target="_blank">Twitter (X)</a></li>
-                <li><a href="https://pump.fun/" target="_blank"> pump.fun</a></li>
-            </ul>
-            <p class="disclaimer">&copy; 2024 GPEPE. $GPEPE is a meme token with no intrinsic value or expectation of financial return. For entertainment purposes only.</p>
-        </div>
+        <p>&copy; 2026 GPEPE Kingdom. No intrinsic value. For the memes.</p>
     </footer>
 
 </body>
